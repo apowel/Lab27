@@ -1,0 +1,85 @@
+﻿@model Lab27.Models.Location
+
+@{
+    ViewData["Title"] = "View";
+}
+
+<h1>View</h1>
+
+<h4>Location</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="View">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="region" class="control-label"></label>
+                <input asp-for="region" class="form-control" />
+                <span asp-validation-for="region" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="latitude" class="control-label"></label>
+                <input asp-for="latitude" class="form-control" />
+                <span asp-validation-for="latitude" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="longitude" class="control-label"></label>
+                <input asp-for="longitude" class="form-control" />
+                <span asp-validation-for="longitude" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="elevation" class="control-label"></label>
+                <input asp-for="elevation" class="form-control" />
+                <span asp-validation-for="elevation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="wfo" class="control-label"></label>
+                <input asp-for="wfo" class="form-control" />
+                <span asp-validation-for="wfo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="timezone" class="control-label"></label>
+                <input asp-for="timezone" class="form-control" />
+                <span asp-validation-for="timezone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="areaDescription" class="control-label"></label>
+                <input asp-for="areaDescription" class="form-control" />
+                <span asp-validation-for="areaDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="radar" class="control-label"></label>
+                <input asp-for="radar" class="form-control" />
+                <span asp-validation-for="radar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="zone" class="control-label"></label>
+                <input asp-for="zone" class="form-control" />
+                <span asp-validation-for="zone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="county" class="control-label"></label>
+                <input asp-for="county" class="form-control" />
+                <span asp-validation-for="county" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="firezone" class="control-label"></label>
+                <input asp-for="firezone" class="form-control" />
+                <span asp-validation-for="firezone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="metar" class="control-label"></label>
+                <input asp-for="metar" class="form-control" />
+                <span asp-validation-for="metar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

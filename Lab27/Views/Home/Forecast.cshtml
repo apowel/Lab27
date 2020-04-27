@@ -1,0 +1,16 @@
+﻿@model Weather
+
+@if (Model.Data != null)
+{
+    <h1>Weather for @Model.Location.areaDescription</h1>
+    @for (int i = 0; i < Model.Data.text.Length; i++)
+    {
+        <h3>@Model.Time.startPeriodName[i]</h3>
+        <p> @Model.Data.text[i]</p>
+    }
+}
+else
+{
+    <p>Those parameters are not compatible with the API.</p>
+}
+<a asp-action="Index">Try again</a>
